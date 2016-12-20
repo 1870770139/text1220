@@ -1,0 +1,1 @@
+$(function(){$("#pwd1").blur(function(){""!=$("#text1").val()&&""!=$("#pwd1").val()&&$(".btn").css("background","#ffa500").removeAttr("disabled").removeClass("disabled")})});

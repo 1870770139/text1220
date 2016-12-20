@@ -1,0 +1,1 @@
+var $active=$(".active"),$inform=$("inform"),$massage=$("massage"),$news=$("news"),x=0;$active.on("tap",function(){var s=$(this);s.toggle(1e3,function(){s.css("background-color","#ed692b").css("color","white"),$inform.css("display","block")})});

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: transparent;
+  position: relative;
+  top: 0;
+}
+.icon-back {
+  width: 65px;
+  padding-left: 15px;
+  background: transparent url("../../public/imges/首页/nav_icon_down@2x.png") no-repeat left 50px center;
+  background-size: 12px 6px;
+  line-height: 50px;
+  font-style: normal;
+}
+.header_title {
+  padding-right: 80px;
+}
+.search_box {
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+.seaech_input {
+  height: 30px;
+  background-color: #cecece;
+  line-heihgt: 30px;
+}

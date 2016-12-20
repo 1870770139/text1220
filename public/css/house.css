@@ -1,0 +1,490 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #efeff4;
+}
+.heads {
+  background-color: transparent;
+  position: absolute;
+  top: 40px;
+  z-index: 5;
+  width: 100%;
+}
+.place-name {
+  position: absolute;
+  margin-left: 15px;
+  top: 60%;
+  margin-top: -12px;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Microsoft YaHei";
+}
+.heads-title {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  top: 50%;
+  margin-top: -12px;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Microsoft YaHei";
+}
+.search-box {
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  left: 15px;
+  z-index: 5;
+}
+.search-input {
+  height: 30px;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Microsoft YaHei";
+  color: #999;
+}
+.icon-search {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom;
+}
+input {
+  border: 0;
+  background-color: #f1f1f1;
+  padding: 5px 0 5px 5px;
+  font-family: "Microsoft YaHei";
+}
+.banner {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+.banner .banner-box {
+  width: 400%;
+  transition: all 0.5s;
+  transform: translateX(0);
+}
+.banner-img {
+  float: left;
+  width: 25%;
+  height: 320px;
+  background: url("../../public/imges/首页/banner_img@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.banner-img:nth-child(2) {
+  background: url("../../public/imges/大厦详情/banner_img@2x.png") no-repeat center;
+}
+.banner-img:nth-child(3) {
+  background: url("../../public/imges/房型详情/banner_img@2x.png") no-repeat center;
+}
+.point-box {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  margin-left: -24px;
+  z-index: 5;
+  height: 16px;
+  text-align: center;
+}
+.point-box .point-block {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.query-box {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebee;
+}
+.query-box .query-block {
+  flex: 1;
+}
+.text {
+  display: block;
+  text-align: center;
+  height: 30px;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  margin-top: 10px;
+  border-right: 1px solid #ebebee;
+}
+.icon {
+  display: block;
+  height: 12px;
+  width: 20px;
+  margin-left: 30px;
+  margin-top: -8px;
+}
+.query-price {
+  width: 50px;
+  height: 50px;
+  background: url("../../public/imges/首页/content_icon01_nor@2x.png") no-repeat center;
+  background-size: 30px;
+}
+article {
+  margin-top: -10px;
+}
+.block-box {
+  position: relative;
+  display: flex;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+.block-box .aixin {
+  position: absolute;
+  top: 15%;
+  right: 6%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url("../../public/imges/首页/collect_icon_nor@2x.png") no-repeat center;
+  background-size: 90%;
+}
+.block-box .img-box {
+  flex: 3;
+  background: url("../../public/imges/首页/content_img_list@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.info-box {
+  flex: 5;
+  margin-left: 20px;
+}
+.info-title {
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.info-address {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #7e7e7e;
+  padding-bottom: 5px;
+}
+.down-box {
+  display: none;
+}
+.info-tag-box {
+  width: 60px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #eb6021;
+  margin-left: 10px;
+}
+.info-tag-box span {
+  text-align: center;
+  color: #eb6021;
+  font-size: 12px;
+  display: block;
+  line-height: 16px;
+}
+.info-price {
+  margin-top: 5px;
+}
+.info-price span {
+  display: block;
+  float: left;
+  color: #eb6021;
+  font-size: 1em;
+  font-family: arial;
+}
+.info-price span:nth-child(2) {
+  color: #7e7e7e;
+  float: left;
+  margin-left: 10px;
+  font-size: 0.6em;
+  line-height: 16px;
+}
+.info-price span:nth-child(3) {
+  color: #7e7e7e;
+  float: left;
+  padding-left: 30px;
+  font-size: 0.6em;
+  line-height: 16px;
+}
+.heads02 {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 6;
+  height: 55px;
+  width: 100%;
+  vertical-align: bottom;
+}
+.place-name02 {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Microsoft YaHei";
+  display: block;
+  margin-top: 18px;
+  margin-left: 16px;
+}
+.heades-box02 {
+  width: 80px;
+  height: 30px;
+  top: 15px;
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+}
+.heades-box02:before {
+  content: '';
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.heades-box02 .heades-input02 {
+  border-radius: 4px;
+  padding: 5px;
+  padding-right: 40px;
+  width: 150px;
+  border: 0;
+  text-align: center;
+}
+.bottom-fixed {
+  position: fixed;
+  z-index: 6;
+  height: 50px;
+  background: #fff;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+  color: #b5b5b5;
+  border-top: 1px solid #e2e2e3;
+}
+.bottom-fixed img {
+  width: 28px;
+  margin-top: 4px;
+}
+.bottom {
+  float: left;
+  margin-left: 36px;
+}
+.bottom-jia {
+  width: 50px;
+  height: 50px;
+  background: url("../../public/imges/底部导航栏/bottom_icon05@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.tanchu02 {
+  position: absolute;
+  z-index: 4;
+  height: 50%;
+  top: 426px;
+  width: 100%;
+  background: #efeff4;
+}
+.tanchu02 .quyu {
+  line-height: 48px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+}
+.quyu2 {
+  line-height: 48px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  background: #fff;
+}
+.quyu-input {
+  margin-left: 70px;
+  margin-top: 10px;
+}
+.quyu-input input {
+  border: 1px solid #e9eaeb;
+  border-radius: 6px;
+  width: 70px;
+  height: 30px;
+  float: left;
+  margin: 0 10px;
+}
+.quyu-input .border {
+  width: 25px;
+  height: 1px;
+  border-bottom: 1px solid #cfcfcf;
+  float: left;
+  margin-top: 15px;
+}
+.quyu-input .queding {
+  border: 1px solid #e9eaeb;
+  border-radius: 6px;
+  background: #fff;
+  width: 50px;
+  height: 30px;
+  float: left;
+  margin-left: 15px;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Microsoft YaHei";
+  font-size: 0.9em;
+}
+.tanchu03 {
+  position: absolute;
+  z-index: 4;
+  height: 385px;
+  top: 426px;
+  width: 100%;
+  background: #efeff4;
+}
+.danjia {
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+}
+.danjia02 {
+  line-height: 40px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  background: #fff;
+}
+.yincang {
+  display: none;
+}
+.touming {
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  top: 70%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.tanchu04 {
+  position: absolute;
+  display: flex;
+  z-index: 4;
+  height: 385px;
+  top: 426px;
+  width: 100%;
+  background: #efeff4;
+  overflow: hidden;
+}
+.tanchu04 .tan-right {
+  flex: 1;
+}
+.tanchu04 .tan-left {
+  flex: 1;
+  line-height: 30px;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+}
+.tanchu04 .tan-left .ditie {
+  padding: 5px 0 5px 10px;
+}
+.tanchu04 .tan-left .ditie-atv {
+  background: #fff;
+}
+.tanchu04 .tan-right .gengduo {
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  line-height: 30px;
+  display: none;
+  background: #fff;
+}
+.tanchu04 .tan-right .gengduo .luxian {
+  border-bottom: 1px solid #eee;
+  margin-left: 10px;
+  padding: 5px 0 5px 0;
+}
+.tanchu04 .tan-right .gengduo .quanbu {
+  color: #ea5404;
+  margin-left: 10px;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid #eee;
+}
+.touming02 {
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  top: 70%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.search-bg {
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  bottom: 0;
+  z-index: 7;
+  width: 100%;
+}
+.search-head {
+  width: 100%;
+}
+.search-head .search-box02 {
+  border-radius: 6px;
+  width: 80%;
+  height: 50px;
+}
+.search-head .search-box02 .search-input02 {
+  background: #f1f1f1;
+  color: #bfbfbf;
+  border-radius: 6px;
+  padding: 10px 60px 10px 0px;
+  width: 75%;
+  font-family: "SimHei";
+  border: 0px;
+  margin: 10px 0px 0px 10px;
+  text-align: center;
+}
+.search-head .search-box02 span {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  font-family: "SimHei";
+  color: #ea5404;
+}
+.search-txt {
+  height: 40px;
+  margin-top: 10px;
+  width: 100%;
+  background: #efeff4;
+}
+.search-txt .search-txt1 {
+  font-size: 16px;
+  font-family: "SimHei";
+  color: #868687;
+  line-height: 40px;
+  padding-left: 20px;
+  float: left;
+}
+.search-txt .search-txt2 {
+  font-size: 14px;
+  font-family: "SimHei";
+  color: #868687;
+  line-height: 40px;
+  padding-right: 20px;
+  float: right;
+}
+.search-footer {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.search-footer .search-footer1 {
+  font-size: 18px;
+  font-family: "SimHei";
+  color: #505050;
+  border-bottom: 1px solid #ebebeb;
+  line-height: 30px;
+}
+.aixin2 {
+  position: absolute;
+  top: 15%;
+  right: 6%;
+  width: 20px;
+  height: 20px;
+  display: block;
+}

@@ -1,0 +1,94 @@
+@import url("../header.css");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-family: Roboto;
+}
+.header {
+  display: -webkit-flex;
+  display: flex;
+  height: 35px;
+  line-height: 35px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.icon-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  padding-top: 6px;
+  padding-left: 6px;
+}
+.header_title {
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ed692b;
+  text-align: center;
+}
+.header_centent {
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+}
+.agent_info_bottom {
+  padding: 0 10px;
+  margin-top: 10px;
+  background: #fff;
+  font-size: 12px;
+}
+.agent_info_bottom .company {
+  display: flex;
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: left;
+}
+.agent_info_bottom .company .mycompany {
+  flex: 2;
+}
+.agent_info_bottom .company .details {
+  flex: 7;
+  font-size: 12px;
+}
+.agent_info_bottom .company1 {
+  position: relative;
+}
+.agent_info_bottom .company1:after {
+  position: absolute;
+  content: '';
+  background-size: contain;
+  right: 0;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+}
+.agent_info_card {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  display: flex;
+  margin-top: 25px;
+}
+.agent_info_card .agent_info_li {
+  flex: 4;
+  text-align: center;
+  padding: 0 4px;
+}
+.agent_info_card .agent_info_li .agent_card_bg {
+  width: 90px;
+  margin: auto;
+  height: 64px;
+  background: #878787;
+  border-radius: 5px;
+}
+.agent_info_card .agent_info_li p {
+  margin: 10px 0;
+  font-size: 12px;
+}

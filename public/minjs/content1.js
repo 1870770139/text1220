@@ -1,0 +1,1 @@
+$(function(){$("#up").click(function(){""==$("input[type=text]").val()||""==$("input[type=password]").val()?alert("输入格式不正确"):window.location.reload()}),$(".bt_register").click(function(){location.href="register.html"}),$(".bt_passwd").click(function(){location.href="password1.html"})});
